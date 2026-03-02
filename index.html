@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link id="favicon" rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Weather App</title>
+</head>
+<body>
+    <main class="container">
+        <div class="inputs">
+        <section class="header">
+            <h2>weather app</h2>
+            <p>search any city and get current weather.</p>
+        </section>
+        <section class="search">
+            <input type="text" placeholder="search" id="search">
+            <button id="button">search</button>
+        </section>
+        <div class="message">
+            <span class="error"></span>
+            <div class="loader_container">
+                <div class="loader"></div>
+                <span class="loader_text">loading...</span>
+            </div>
+        </div>
+        </div>
+
+        <div class="outputs">
+            <section class="current_weather">
+                <div class="location">
+                    <h3></h3>
+                    <p></p>
+                </div>
+                <div class="temperature">
+                    <img src="" alt="icon">
+                    <h1></h1>
+                    <h4 class="weather_description"></h4>
+                    <div class="wind">
+                        <span class="wind_speed"></span>
+                        <span class="wind_degree"></span>
+                    </div>
+                    <div class="local_time">
+                        local time: <span></span>
+                    </div>
+                </div>
+
+            </section>
+            <section class="forcast">
+                <div class="forcast_div">
+                    <h1 class="icon">💧</h1>
+                    <p>humidity</p>
+                    <h1 class="humidity"></h1>
+                </div>
+                <div class="forcast_div">
+                    <h1 class="icon">🌡️</h1>
+                    <p> feels like</p>
+                    <h1 class="feelslike"></h1>
+                </div>
+                <div class="forcast_div">
+                    <h1 class="icon">☁️</h1>
+                    <p>cloud cover</p>
+                    <h1 class="cloudcover"></h1>
+                </div>
+                <div class="forcast_div">
+                    <h1 class="icon">🌞</h1>
+                    <p> visibility</p>
+                    <h1 class="visibility"></h1>
+                </div>
+            </section>
+        </div>
+    </main>
+<script src="main.js"></script>
+</body>
+</html>
