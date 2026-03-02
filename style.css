@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.roboto-font {
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 450;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+body {
+    background-color: rgb(19, 18, 24);
+    color: white;
+    font-family: "Roboto", sans-serif;
+}
+.container {
+    background-color: rgb(27, 26, 34);
+    padding: 15px;
+    width: 70%;
+    margin: auto;
+    margin-top: 30px;
+    border-radius: 15px;
+    border: 1px solid rgb(39, 37, 49);
+}
+.header h2, p {
+    margin: 5px;
+    text-transform: capitalize;
+}
+.header p {
+    font-size: 0.9rem;
+    color: rgb(171, 171, 172);
+}
+.search {
+    width: 100%;
+    display: flex;
+    gap: 5px;
+}
+.search input {
+    background-color:  rgb(19, 18, 24);
+    border: 1px solid  rgb(39, 37, 49);
+    padding: 8px;
+    border-radius: 8px;
+    width: 90%;
+    outline: none;
+    color: white;
+}
+.search button {
+    background-color:  rgb(72, 129, 250);
+    color: white;
+    border: 1px solid rgb(39, 37, 49);
+    border-radius: 10px;
+    text-transform: capitalize;
+    font-weight: 900;
+    font-size: 10px;
+    padding: 0 5px;
+    cursor: pointer;
+}
+.search button:hover {
+    background-color:  rgb(47, 111, 250);
+}
+.outputs {
+    padding: 5px;
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+.current_weather , .forcast {
+    background-color:  rgb(39, 37, 49);
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid  rgb(49, 46, 61);
+    width: 50%;
+}
+.location h3 {
+    text-transform: capitalize;
+    font-size: 1rem;
+}
+.location p {
+    font-size: 0.6rem;
+    color: rgb(171, 171, 172);
+}
+.temperature h1 {
+    font-weight: 900;
+}
+.weather_description {
+    text-transform: capitalize;
+    color: rgb(171, 171, 172);
+}
+.wind {
+    padding: 10px 0;
+    color: rgb(171, 171, 172);
+}
+.wind_speed , .wind_degree {
+    background-color: rgb(49, 46, 61);
+    padding: 3px 6px;
+    border-radius: 50px;
+    border: 1px solid  rgb(60, 56, 75);
+    font-size: 0.8rem;
+}
+.local_time {
+    font-size: 0.7rem;
+    color: rgb(171, 171, 172);
+    text-transform: capitalize;
+}
+.forcast {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px;
+}
+.forcast_div {
+    font-size: 0.8rem;
+    color: rgb(171, 171, 172);
+    background-color: rgb(49, 46, 61);
+    border: 1px solid  rgb(60, 56, 75);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 5px;
+}
+.forcast_div:hover {
+    background-color: rgb(49, 46, 61);
+}
+.message {
+    padding: 5px;
+}
+.message .error {
+    font-size: 0.7rem;
+    text-transform: capitalize;
+    color: rgb(247, 0, 115);
+}
+
+img {
+    width: 35px;
+    border-radius: 50px;
+}
+
+.loader_text {
+    font-size: 0.7rem;
+    text-transform: capitalize;
+    color: rgb(171, 171, 172);
+}
+.loader_container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 5px 0;
+    display: none;
+}
+.loader {
+    width: 10px;
+    height: 10px;
+    padding: 4px;
+    border-radius: 50px;
+    margin: 0;
+    border: 1px solid rgb(58, 55, 73);
+    border-top: 2px solid  rgb(171, 171, 172);
+    animation: spin 0.8s linear infinite;
+}
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
