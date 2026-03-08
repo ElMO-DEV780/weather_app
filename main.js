@@ -22,7 +22,7 @@ const favicon = document.getElementById('favicon');
 const default_city = 'agadir';
 
 async function search(city) {
-    const api_key = '2d3f84bcc26067ea1d41a0856f77'; // it's fake visit: https://weatherstack.com to get your own
+    const api_key = '44a718d9c5c5e443a189086c8064e61f'; // visit: https://weatherstack.com to get your own
     loader.style.display = 'flex';
     outputs.style.display = 'none';
     try { 
