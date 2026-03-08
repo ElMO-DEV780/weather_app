@@ -26,7 +26,7 @@ async function search(city) {
     loader.style.display = 'flex';
     outputs.style.display = 'none';
     try { 
-        const response = await fetch(`http://api.weatherstack.com/current?access_key=${api_key}&query=${city}`);
+        const response = await fetch(`https://api.weatherstack.com/current?access_key=${api_key}&query=${city}`);
 
         if(!response.ok) {
             throw new Error('error');
